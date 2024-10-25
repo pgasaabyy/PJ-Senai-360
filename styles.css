@@ -1,0 +1,561 @@
+/* Estilo para imagens, adicionando uma sombra sutil */
+img {
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para o corpo da página */
+body {
+    font-family: 'Arial', sans-serif; /* Fonte padrão para o corpo */
+    margin: 0; /* Remove a margem padrão */
+    padding: 0; /* Remove o preenchimento padrão */
+    box-sizing: border-box; /* Inclui bordas e preenchimentos nas dimensões do elemento */
+    background-image: url("./img/background.png");
+    z-index: -1000;
+}
+
+/* Estilo para o elemento HTML e corpo */
+html, body {
+    margin: 0; /* Remove a margem padrão */
+    padding: 0; /* Remove o preenchimento padrão */
+    height: 100%; /* Garante altura total */
+    width: 100%; /* Garante largura total */
+}
+
+/* Estilo para o cabeçalho */
+header {
+    background-color: white; /* Cor de fundo do cabeçalho */
+    border-bottom: 0px solid #ffffff; /* Borda inferior (invisível) */
+    padding: 20px 0; /* Preenchimento superior e inferior */
+    position: sticky; /* Fica fixo no topo ao rolar a página */
+    top: 0; /* Fixa o cabeçalho no topo */
+    z-index: 1000; /* Garante que o cabeçalho esteja acima de outros elementos */
+}
+
+/* Estilo para a navegação */
+nav {
+    display: flex; /* Exibe itens em linha */
+    justify-content: space-between; /* Distribui o espaço entre itens */
+    align-items: center; /* Alinha itens verticalmente ao centro */
+    max-width: 1200px; /* Largura máxima do contêiner de navegação */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    padding: 0 20px; /* Preenchimento lateral */
+}
+
+/* Estilo para a lista de links de navegação */
+.nav-links {
+    list-style: none; /* Remove os marcadores da lista */
+    display: flex; /* Exibe itens em linha */
+}
+
+.nav-links li {
+    margin-left: 20px; /* Espaçamento entre itens da lista */
+}
+
+.nav-links a {
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: #000000; /* Cor do texto dos links */
+}
+
+
+/* Estilo para a seção hero */
+#hero {
+    background: url('img/codes.jpg') no-repeat center center; /* Imagem de fundo centralizada */
+    background-size: cover; /* Cobre toda a área do elemento */
+    height: 37vh; /* Altura de 37% da altura da viewport */
+    display: flex; /* Exibe itens em linha */
+    align-items: center; /* Alinha itens verticalmente ao centro */
+    justify-content: center; /* Alinha itens horizontalmente ao centro */
+    color: #ffffff; /* Cor do texto */
+    text-align: center; /* Alinha o texto ao centro */
+    padding: 200px; /* Preenchimento interno */
+}
+
+/* Estilo para o conteúdo do hero */
+.hero-content {
+    text-align: center; /* Alinha o texto ao centro */
+    max-width: 600px; /* Largura máxima do contêiner de conteúdo */
+}
+
+/* Estilo para o título do hero */
+.hero-content h1 {
+    font-size: 3em; /* Tamanho da fonte do título */
+    margin-bottom: 20px; /* Espaçamento inferior */
+}
+
+/* Estilo para o parágrafo do hero */
+.hero-content p {
+    font-size: 1.2em; /* Tamanho da fonte do parágrafo */
+    margin-bottom: 40px; /* Espaçamento inferior */
+}
+
+/* Estilo para o contêiner de cartões */
+.card-container {
+    display: flex; /* Exibe itens em linha */
+    justify-content: space-between; /* Distribui o espaço entre itens */
+    gap: 20px; /* Espaçamento entre cartões */
+    max-width: 1200px; /* Largura máxima do contêiner de cartões */
+    width: 100%; /* Largura total */
+}
+
+/* Estilo para os cartões */
+.card {
+    background: #fff; /* Cor de fundo do cartão */
+    border: 1px solid #ffffff; /* Borda do cartão */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra do cartão */
+    overflow: hidden; /* Oculta conteúdo que ultrapassa as bordas */
+    width: 900px; /* Largura do cartão */
+    text-align: center; /* Alinha o texto ao centro */
+    justify-content: space-around;
+}
+
+/* Estilo para a imagem dentro dos cartões */
+.card img {
+    width: 100%; /* Largura total do cartão */
+    height: auto; /* Altura automática */
+}
+
+/* Estilo para o título dentro dos cartões */
+.card h3 {
+    margin: 15px 0; /* Espaçamento superior e inferior */
+    font-size: 1.5em; /* Tamanho da fonte do título */
+    color: #000000; /* Cor do texto */
+}
+
+/* Estilo para o parágrafo dentro dos cartões */
+.card p {
+    padding: 0 15px 15px; /* Preenchimento interno */
+    font-size: 1em; /* Tamanho da fonte do parágrafo */
+    color: #000000; /* Cor do texto */
+}
+
+/* Estilo para seções genéricas */
+section {
+    padding: 60px 20px; /* Preenchimento interno */
+    max-width: 1200px; /* Largura máxima da seção */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+/* Estilo para a seção de cursos */
+.curso {
+    justify-content: flex-end; /* Alinha itens ao final do contêiner */
+    text-align: center; /* Alinha o texto ao centro */
+    display: flex; /* Exibe itens em linha */
+    margin: 100px; /* Margem ao redor da seção */
+}
+
+/* Estilo para os parágrafos */
+p {
+    text-align: center; /* Alinha o texto ao centro */
+    display: block; /* Exibe como bloco */
+}
+
+/* Estilo para vídeos */
+.video {
+    max-width: 100%; /* Largura máxima do vídeo */
+    height: auto; /* Altura automática */
+    text-align: right; /* Alinha o texto à direita */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra do vídeo */
+    margin: 100px; /* Margem ao redor do vídeo */
+}
+
+/* Contêiner para o botão */
+.button-container {
+    text-align: center; /* Alinha o texto ao centro */
+}
+
+/* Estilo para o link de chamada para ação */
+.cta-button-link {
+    display: inline-block; /* Exibe como bloco em linha */
+    padding: 10px 10px; /* Preenchimento interno */
+    background-color: #fc0f0f; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto */
+    text-decoration: none; /* Remove o sublinhado do link */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 1.2em; /* Tamanho da fonte */
+    font-weight: bold; /* Negrito */
+}
+
+/* Estilo para o estado hover do link de chamada para ação */
+.cta-button-link:hover {
+    background-color: #000000; /* Cor de fundo ao passar o mouse */
+}
+
+/* Estilo para a seção de contato */
+#contato {
+    padding: 20px; /* Preenchimento interno */
+    background-color: #f4f4f4; /* Cor de fundo da seção */
+}
+
+/* Estilo para o conteúdo de contato */
+.contato-conteudo {
+    display: flex; /* Exibe itens em linha */
+    align-items: flex-start; /* Alinha itens ao início verticalmente */
+    justify-content: space-between; /* Distribui o espaço entre itens */
+    gap: 10px; /* Espaçamento entre itens */
+}
+
+/* Estilo para imagens na seção de contato */
+.imagem {
+    flex: 1 /* Flexível para ocupar espaço */
+}
+
+.imagem img {
+    max-width: 100%; /* Largura máxima da imagem */
+    height: auto; /* Altura automática */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra da imagem */
+}
+
+/* Estilo para o formulário na seção de contato */
+.formulario {
+    flex: 1; /* Flexível para ocupar espaço */
+    max-width: 500px; /* Largura máxima do formulário */
+    padding: 20px;
+}
+
+/* Estilo para o formulário na seção de contato (continuação) */
+.formulario {
+    flex: 1; /* Flexível para ocupar espaço */
+    max-width: 500px; /* Largura máxima do formulário */
+    padding: 20px; /* Preenchimento interno */
+    background-color: #ffffff; /* Cor de fundo do formulário */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra do formulário */
+}
+
+/* Estilo para o título do formulário */
+.formulario h2 {
+    margin-top: 0; /* Remove a margem superior */
+}
+
+/* Estilo para os rótulos dentro do formulário */
+.formulario label {
+    display: block; /* Exibe como bloco */
+    margin: 10px 0 5px; /* Margem em torno dos rótulos */
+}
+
+/* Estilo para campos de entrada e área de texto no formulário */
+.formulario input, .formulario textarea {
+    width: 100%; /* Largura total */
+    padding: 5px; /* Preenchimento interno */
+    margin-bottom: 20px; /* Espaçamento inferior */
+    border: 1px solid #ccc; /* Borda leve */
+    border-radius: 4px; /* Bordas arredondadas */
+}
+
+/* Estilo para o botão de envio do formulário */
+.formulario button {
+    background-color: #ff0000; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    border: none; /* Remove a borda padrão */
+    padding: 10px 20px; /* Preenchimento interno */
+    border-radius: 4px; /* Bordas arredondadas */
+    cursor: pointer; /* Altera o cursor para um ponteiro */
+}
+
+/* Estilo para o estado hover do botão de envio */
+.formulario button:hover {
+    background-color: #ff0000; /* Mantém a cor ao passar o mouse */
+}
+
+/* Estilos responsivos para telas menores (max-width: 768px) */
+@media (max-width: 768px) {
+    /* Estilo para o conteúdo de contato em telas menores */
+    .contato-conteudo {
+        flex-direction: column; /* Alinha os itens verticalmente */
+        align-items: center; /* Centraliza os itens */
+        gap: 20px; /* Espaçamento entre itens */
+    }
+
+    .imagem, .formulario {
+        width: 100%; /* Largura total */
+        max-width: none; /* Remove o limite de largura máxima */
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra consistente */
+    }
+
+    .formulario {
+        padding: 15px; /* Reduz o preenchimento interno */
+    }
+}
+
+/* Estilo para o rodapé */
+footer {
+    background-color: #000000; /* Cor de fundo do rodapé */
+    color: #fff; /* Cor do texto do rodapé */
+    padding: 20px; /* Preenchimento interno */
+}
+
+/* Estilo para o conteúdo do rodapé */
+.footer-content {
+    display: flex; /* Exibe itens em linha */
+    flex-wrap: wrap; /* Permite quebra de linha */
+    justify-content: space-between; /* Distribui o espaço entre itens */
+    max-width: 1200px; /* Largura máxima do rodapé */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    padding: 0 20px; /* Preenchimento lateral */
+}
+
+/* Estilo para o logotipo no rodapé */
+.footer-logo {
+    flex: 1; /* Flexível para ocupar espaço */
+    display: flex; /* Exibe itens em linha */
+    align-items: center; /* Alinha verticalmente ao centro */
+}
+
+/* Estilo para a imagem do logotipo */
+.footer-logo img {
+    max-width: 200px; /* Largura máxima do logotipo */
+    height: auto; /* Altura automática */
+}
+
+/* Estilo para as informações no rodapé */
+.footer-info {
+    flex: 2; /* Flexível para ocupar mais espaço */
+    display: flex; /* Exibe itens em linha */
+    justify-content: space-between; /* Distribui o espaço entre itens */
+    flex-wrap: wrap; /* Permite quebra de linha */
+    text-align: left; /* Alinha o texto à esquerda */
+    margin: 0 20px; /* Margem lateral */
+}
+
+/* Estilo para textos e horários no rodapé */
+.footer-text, .footer-hours {
+    flex: 1; /* Flexível para ocupar espaço */
+    margin: 0 10px; /* Margem lateral */
+}
+
+/* Estilo para os títulos de texto no rodapé */
+.footer-text h3 {
+    margin-bottom: 10px; /* Espaçamento inferior */
+    font-size: 1.3em; /* Tamanho da fonte */
+}
+
+/* Estilo para parágrafos no rodapé */
+.footer-text p {
+    margin: 10px 0; /* Margem superior e inferior */
+}
+
+/* Estilo para os horários no rodapé */
+.footer-hours h4 {
+    margin: 10px 0; /* Margem superior e inferior */
+    font-size: 1.2em; /* Tamanho da fonte */
+    color: red; /* Cor do texto */
+}
+
+/* Estilo para os horários no rodapé */
+.footer-hours p {
+    margin: 5px 0; /* Margem superior e inferior */
+    white-space: nowrap; /* Não quebra o texto em várias linhas */
+    overflow: hidden; /* Oculta o texto que ultrapassa o contêiner */
+    text-overflow: ellipsis; /* Adiciona reticências ao texto que não cabe */
+}
+
+/* Estilo para os links no rodapé */
+.footer-links {
+    flex: 0.7; /* Flexível para ocupar menos espaço */
+    display: flex; /* Exibe itens em linha */
+    flex-direction: column; /* Exibe itens em coluna */
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: flex-end; /* Alinha à direita */
+    margin: 0 20px; /* Margem lateral */
+}
+
+/* Estilo para a lista de links no rodapé */
+.footer-links ul {
+    list-style: none; /* Remove os marcadores da lista */
+    padding: 0; /* Remove o preenchimento */
+    margin: 0; /* Remove a margem */
+}
+
+/* Estilo para os itens da lista de links */
+.footer-links li {
+    margin: 10px 0; /* Margem superior e inferior */
+}
+
+/* Estilo para os links no rodapé */
+.footer-links a {
+    color: #fc0f0f; /* Cor do texto do link */
+    text-decoration: none; /* Remove o sublinhado do link */
+    font-size: 1.2em; /* Tamanho da fonte */
+}
+
+/* Estilo para o estado hover dos links no rodapé */
+.footer-links a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+/* Estilo para a parte inferior do rodapé */
+.footer-bottom {
+    text-align: center; /* Alinha o texto ao centro */
+    padding: 10px; /* Preenchimento interno */
+    background-color: #000000; /* Cor de fundo */
+    color: #fc0f0f; /* Cor do texto */
+    font-size: 0.9em; /* Tamanho da fonte */
+}
+
+/* Estilo para a seção de cursos (flexível e centralizado) */
+.curso {
+    display: flex; /* Exibe itens em linha */
+    align-items: center; /* Alinha itens verticalmente ao centro */
+    gap: 50px; /* Espaçamento entre itens */
+    padding: 20px; /* Preenchimento interno */
+}
+
+/* Estilo para vídeos dentro da seção de cursos */
+.video {
+    flex: 1; /* Flexível para ocupar espaço */
+}
+
+/* Estilo para o texto dentro da seção de cursos */
+.texto {
+    flex: 2; /* Flexível para ocupar mais espaço */
+}
+
+/* Estilo para vídeos dentro da seção de cursos (elemento video) */
+.video video {
+    max-width: 100%; /* Largura máxima do vídeo */
+    height: auto; /* Altura automática */
+}
+
+/* Estilo para a seção de cursos (outros ajustes de largura) */
+.curso {
+    display: flex; /* Exibe itens em linha */
+    justify-content: space-around; /* Distribui o espaço entre itens */
+    align-items: center; /* Alinha itens verticalmente ao centro */
+}
+
+/* Estilo para vídeos na seção de cursos (ajustes de largura) */
+.video {
+    width: 100%; /* Largura do vídeo */
+}
+
+/* Estilo para textos na seção de cursos (ajustes de largura) */
+.texto1 {
+    width: 80%; /* Largura do texto */
+}
+
+/* Estilo para a seção de cursos (outros ajustes de layout) */
+.curso {
+    display: flex; /* Exibe itens em linha */
+    justify-content: center; /* Centraliza itens horizontalmente */
+    align-items: center; /* Alinha itens verticalmente ao centro */
+    font-size: 1.2em; /* Tamanho da fonte */
+    width: 80%; /* Largura do contêiner */
+}
+
+.mapa {
+    text-align: center;
+    margin: 20px auto;
+}
+
+.mapa h2 {
+    margin-bottom: 10px;
+}
+
+iframe {
+    margin: 0 auto;
+    display: block;
+}
+
+/* Estilo para o link de chamada para ação */
+.cta-button-link {
+    display: inline-block; /* Exibe como bloco em linha */
+    padding: 20px 30px; /* Preenchimento interno */
+    background-color: #fc0f0f; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto */
+    text-decoration: none; /* Remove o sublinhado do link */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 1.2em; /* Tamanho da fonte */
+    font-weight: bold; /* Negrito */
+}
+
+/* Estilo para o estado hover do link de chamada para ação */
+.cta-button-link:hover {
+    background-color: #000000; /* Cor de fundo ao passar o mouse */
+}
+
+/* Estilo para a seção de contato */
+#contato {
+    padding: 20px; /* Preenchimento interno */
+    background-color: #f4f4f4; /* Cor de fundo da seção */
+}
+
+/* Estilo para o card de contato */
+.contato-card {
+    max-width: 1200px; /* Largura máxima do card */
+    margin: 0 auto; /* Centraliza o card horizontalmente */
+    padding: 20px; /* Preenchimento interno do card */
+    background-color: #fff; /* Cor de fundo do card */
+    border-radius: 10px; /* Bordas arredondadas do card */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra do card */
+}
+
+/* Estilo para o conteúdo de contato */
+.contato-conteudo {
+    display: flex; /* Exibe itens em linha */
+    align-items: stretch; /* Alinha itens com a mesma altura */
+    gap: 20px; /* Espaçamento entre itens */
+}
+
+/* Estilo para o mapa */
+.mapa {
+    flex: 1; /* Faz o mapa ocupar o restante do espaço */
+    display: flex;
+    flex-direction: column; /* Alinha itens verticalmente */
+    align-items: center; /* Alinha itens horizontalmente */
+}
+
+.mapa h2 {
+    margin-bottom: 10px;
+}
+
+iframe {
+    width: 100%; /* Faz o iframe ocupar toda a largura do container */
+    height: 100%; /* Faz o iframe ocupar toda a altura do container */
+    border: 0; /* Remove a borda do iframe */
+}
+
+/* Estilo para o formulário */
+.formulario {
+    flex: 1; /* Faz o formulário ocupar o restante do espaço */
+    display: flex;
+    flex-direction: column; /* Alinha itens verticalmente */
+    gap: 10px; /* Espaçamento entre itens */
+}
+
+.formulario h2 {
+    margin-bottom: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column; /* Alinha os campos do formulário verticalmente */
+    gap: 10px; /* Espaçamento entre os campos do formulário */
+}
+
+label {
+    font-weight: bold;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #fc0f0f; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto */
+    border: none; /* Remove a borda do botão */
+    padding: 10px 20px; /* Preenchimento interno do botão */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 1em; /* Tamanho da fonte */
+    cursor: pointer; /* Cursor pointer ao passar sobre o botão */
+}
+
+button:hover {
+    background-color: #000000; /* Cor de fundo ao passar o mouse */
+}
